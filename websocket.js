@@ -13,7 +13,7 @@ server.on('connection', (socket) => {
     // 메시지를 브로드캐스트
     server.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
-        client.send(`Broadcast: ${message}`);
+        client.send(`${message}`);
       }
     });
   });
