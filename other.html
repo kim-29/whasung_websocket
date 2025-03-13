@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>other bar</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.6rem;
+    }
+
+    .container {
+      margin: 1rem 1rem 4rem 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+    }
+
+    li {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding-block: .5rem;
+    }
+
+    .order-list li {
+      place-items: start;
+      text-align: left;
+      display: block;
+    }
+
+    .result {
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid green;
+    }
+
+    .cutting {
+      grid-template-columns: repeat(4,1fr);
+      border-bottom: 1px solid green;
+    }
+
+    .price {
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid green;
+    }
+
+    button {
+      padding: .5rem;
+      border-radius: .5rem;
+      border: none;
+      background-color: dodgerblue;
+      color: white;
+      margin: 1rem .5rem;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+		.dies{
+			grid-template-columns: 2fr 2fr 2fr 2fr 1fr 1fr;
+			padding: 0;
+		}
+		.dies button{
+			margin: .5rem;
+		}
+
+  </style>
+</head>
+
+<body>
+  <section class="input container">
+    <h1 class="section-title work-title">기타 작업</h1>
+    	<form class="grid">
+				<ul class="dies-list" >
+					<li class="dies-title dies">
+						<span>형번호(bar)</span>     			
+						<span>색상(color)</span>
+						<span>길이(length)</span>
+						<span>수량(count)</span>
+					</li>
+					<li class="dies-item dies">
+						<select class="bar">
+							<option>3036</option>
+							<option>100D-3201(도어)</option>
+							<option>100D-3307-5(도어)</option>
+							<option>100D-3903(도어)</option>
+							<option>100SL-516</option>
+							<option>1102(오사이 : 벙어리)</option>
+							<option>1103(오사이)</option>
+							<option>1103-1(오사이)</option>
+							<option>1110(오사이)</option>
+							<option>1116(오사이)</option>
+							<option>1116-1(오사이)</option>
+							<option>1132(오사이)</option>
+							<option>2106(30mm앵글 3T)</option>
+							<option>2106-1(30mm앵글 1.6T)</option>
+							<option>2106-2(30mm앵글 1T)</option>
+							<option>2106-4(30mm앵글 2T)</option>
+							<option>2132(45mm앵글 1T)</option>
+							<option>2139(50mm앵글 2T)</option>
+							<option>3000(100X100mm 각 파이프)</option>
+							<option>3001(100X45mm 각 파이프)</option>
+							<option>3010(120X45mm 각 파이프)</option>
+							<option>3081(80X35mm 각 파이프)</option>
+							<option>3206(미니도어)</option>
+							<option>3501(도어 후라)</option>
+							<option>3502(도어 후라)</option>
+							<option>3603(도어 다리)</option>
+							<option>3800(80X80mm 각 파이프)</option>
+							<option>4200(10X20mm 각 파이프)</option>
+							<option>4203(25X25mm 각 파이프)</option>
+							<option>4204(45X45mm 각 파이프)</option>
+							<option>4206(40X20mm 각 파이프)</option>
+							<option>4207(35X35mm 각 파이프)</option>
+							<option>45P-16-1(창문)</option>
+							<option>45P-19(창틀)</option>
+							<option>80SL-508-1</option>
+							<option>COR-100(코너 바)</option>
+							<option>CW-4464(마리온)</option>
+							<option>CW-5169(마리온)</option>
+							<option>CW-726(마리온)</option>
+							<option>GAL-1(겔러리)</option>
+							<option>GAL-17(겔러리)</option>
+							<option>GAL-18(겔러리)</option>
+							<option>GAL-4-1(겔러리)</option>
+							<option>HAT130SL-103</option>
+							<option>HAT130SL-601</option>
+							<option>N560016(마리온)</option>
+							<option>NS112-B</option>
+							<option>NS112SL-104</option>
+							<option>NS112SL-401</option>
+							<option>NS112SL-403</option>
+							<option>NS112SL-404</option>
+							<option>NS112SL-417</option>
+							<option>NS112SL-601</option>
+							<option>NS112SL-602</option>
+							<option>NS112SL-603</option>
+							<option>NS112SL-604</option>
+							<option>NS112SL-605</option>
+							<option>NS112SL-607</option>
+							<option>NS112SL-622</option>
+							<option>NS112SL-701</option>
+							<option>NS112SL-701-A</option>
+							<option>NS112SL-702</option>
+							<option>NS112SL-704</option>
+							<option>NS112SL-707</option>
+							<option>NS112SL-801</option>
+							<option>NS112SL-802</option>
+							<option>NS112SL-804</option>
+							<option>NS112SL-805</option>
+							<option>NS112SL-807</option>
+							<option>NS85SL-401</option>
+							<option>NS85SL-601</option>
+							<option>NS88SL-114</option>
+							<option>NS88SL-403</option>
+							<option>NS85SL-603</option>
+							<option>NS88SL-701</option>
+							<option>NS88SL-703</option>
+							<option>NS88SL-801</option>
+							<option>NS88SL-803</option>
+							<option>RP-19*17(19mm 파이프)</option>
+							<option>RP-25*22.6(25mm 파이프)</option>
+							<option>SC-19(방충망)</option>
+							<option>SC-20(방충망)</option>
+							<option>SC-21(방충망)</option>
+							<option>SC-5(방충망)</option>
+							<option>SC-8(방충망)</option>
+							<option>SC-9(방충망)</option>
+							<option>SPA-1501</option>
+							<option>SWL-F-50(마리온)</option>
+							<option>SWL-F-51(마리온)</option>
+							<option>SWL-F-64(마리온)</option>
+							<option>SWL-F-8(마리온)</option>
+							<option>SWL-F-86(마리온)</option>
+							<option>SWL-GB-2(마리온)</option>
+							<option>SWL-MD-2(마리온)</option>
+							<option>SWL-MD-4(마리온)</option>
+							<option>SWL-PF-5(마리온)</option>
+							<option>SWL-V-10(마리온)</option>
+							<option>SWL-V-6(마리온)</option>
+							<option>TB-A3123</option>
+							<option>TBSW230SL-101</option>
+							<option>TBSW230SL-801</option>
+							<option>TBSW230SL-GB28</option>
+
+
+						</select>
+						<select name="color" id="color">
+							<option value="헨켈">헨켈(단가:10,500원)</option>
+							<option value="메탈실버">메탈실버(단가:11,000원)</option>
+							<option value="백색">백색(단가:11,000원)</option>
+							<option value="검정색">검정색(단가:11,500원)</option>
+							<option value="코팅색상">다른색상(단가:12,000원)</option>
+						</select>
+						<input class="length" type="number" placeholder="mm">
+						<input class="count" type="number" >
+						<button class="add-dies">작업 추가</button>
+						<button class="delete-dies" style='background-color: red'>작업 삭제</button>
+					</li>
+				</ul>
+				<label for="work">제작여부: <input type="checkbox" id="work">(체크하지 않을시 절단작업만 시행합니다.)</label>
+				<p>[작업관련 요청사항]</p>
+				<label for="memo"><textarea name="memo" id="memo" cols="65" rows="5" style="resize:none"></textarea></label>
+      </form>
+      
+    <button class="button_other">견적산출</button>
+    <button class="send">보내기</button>
+  </section>
+
+  <section class="result-container container">
+    <h1 class="section-title">자재소요</h1>
+    <ul class="result-list">
+      <li class="title result">
+        <span>형번호</span><span>단위무게(kg/m)</span><span>길이(mm)</span><span>무게(kg)</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="price-container container">
+    <h1 class="section-title">예상 견적가격</h1>
+    <ul class="price-list">
+      <li class="title price">
+        <span>형번호</span><span>총무게(kg)</span><span>단가</span><span>금액</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cutting-container container">
+    <h1 class="section-title">절단 내역</h1>
+    <ul class="cutting-list">
+      <li class="title cutting">
+        <span>형번호</span><span>색상</span><span>길이</span><span>확인</span>
+      </li>
+    </ul>
+  </section>
+
+  <script>
+		/*=================변수설정======================*/
+    const book = {
+      "diesbook": {
+        /*형번호:무게(kg/m)*/
+        "3036":0.760,
+				"100D-3201(도어)":0.655,
+				"100D-3307-5(도어)":1.633,
+				"100D-3903(도어)":1.230,
+				"100SL-516":0.909,
+				"1102(오사이 : 벙어리)":0.210,
+				"1103(오사이)":0.243,
+				"1103-1(오사이)":0.222,
+				"1110(오사이)":0.172,
+				"1116(오사이)":0.150,
+				"1116-1(오사이)":0.138,
+				"1132(오사이)":0.213,
+				"2106(30mm앵글 3T)":0.464,
+				"2106-1(30mm앵글 1.6T)":0.238,
+				"2106-2(30mm앵글 1T)":0.191,
+				"2106-4(30mm앵글 2T)":0.266,
+				"2132(45mm앵글 1T)":0.211,
+				"2139(50mm앵글 2T)":0.537,
+				"3000(100X100mm 각 파이프)":1.266,
+				"3001(100X45mm 각 파이프)":0.792,
+				"3010(120X45mm 각 파이프)":1.267,
+				"3081(80X35mm 각 파이프)":0.758,
+				"3206(미니도어)":0.652,
+				"3501(도어 후라)":0.154,
+				"3502(도어 후라)":0.153,
+				"3603(도어 다리)":0.146,
+				"3800(80X80mm 각 파이프)":0.826,
+				"4200(10X20mm 각 파이프)":0.189,
+				"4203(25X25mm 각 파이프)":0.281,
+				"4204(45X45mm 각 파이프)":0.551,
+				"4206(40X20mm 각 파이프)":0.270,
+				"4207(35X35mm 각 파이프)":0.412,
+				"45P-16-1(창문)":0.480,
+				"45P-19(창틀)":0.476,
+				"80SL-508-1":0.598,
+				"COR-100(코너 바)":1.101,
+				"CW-4464(마리온)":2.611,
+				"CW-5169(마리온)":1.668,
+				"CW-726(마리온)":0.349,
+				"GAL-1(겔러리)":0.215,
+				"GAL-17(겔러리)":0.301,
+				"GAL-18(겔러리)":0.379,
+				"GAL-4-1(겔러리)":0.234,
+				"HAT130SL-103":1.736,
+				"HAT130SL-601":1.055,
+				"N560016(마리온)":0.325,
+				"NS112-B":0.641,
+				"NS112SL-104":1.158,
+				"NS112SL-401":0.599,
+				"NS112SL-403":0.606,
+				"NS112SL-404":0.592,
+				"NS112SL-417":0.556,
+				"NS112SL-601":1.308,
+				"NS112SL-602":1.283,
+				"NS112SL-603":1.078,
+				"NS112SL-604":1.046,
+				"NS112SL-605":0.969,
+				"NS112SL-607":1.234,
+				"NS112SL-622":0.967,
+				"NS112SL-701":0.637,
+				"NS112SL-701-A":0.248,
+				"NS112SL-702":0.687,
+				"NS112SL-704":0.724,
+				"NS112SL-707":0.692,
+				"NS112SL-801":0.629,
+				"NS112SL-802":0.673,
+				"NS112SL-804":0.697,
+				"NS112SL-805":0.670,
+				"NS112SL-807":0.677,
+				"NS85SL-401":0.413,
+				"NS85SL-601":0.503,
+				"NS88SL-114":0.886,
+				"NS88SL-403":0.419,
+				"NS85SL-603":0.518,
+				"NS88SL-701":0.529,
+				"NS88SL-703":0.490,
+				"NS88SL-801":0.464,
+				"NS88SL-803":0.459,
+				"RP-19*17(19mm 파이프)":0.147,
+				"RP-25*22.6(25mm 파이프)":0.215,
+				"SC-19(방충망)":0.327,
+				"SC-20(방충망)":0.340,
+				"SC-21(방충망)":0.095,
+				"SC-5(방충망)":0.326,
+				"SC-8(방충망)":0.172,
+				"SC-9(방충망)":0.147,
+				"SPA-1501":0.916,
+				"SWL-F-50(마리온)":2.155,
+				"SWL-F-51(마리온)":1.690,
+				"SWL-F-64(마리온)":1.931,
+				"SWL-F-8(마리온)":1.761,
+				"SWL-F-86(마리온)":1.860,
+				"SWL-GB-2(마리온)":0.482,
+				"SWL-MD-2(마리온)":0.470,
+				"SWL-MD-4(마리온)":0.388,
+				"SWL-PF-5(마리온)":1.043,
+				"SWL-V-10(마리온)":1.263,
+				"SWL-V-6(마리온)":1.237,
+				"TB-A3123":1.531,
+				"TBSW230SL-101":3.246,
+				"TBSW230SL-801":0.370,
+				"TBSW230SL-GB28":0.140,
+
+      },
+      "colorbook": {
+        /*색상바 단가*/
+        "헨켈": 10500,
+        "메탈실버": 11000,
+        "백색": 11000,
+        "검정색": 11500,
+        "코팅색상": 12000,
+      },
+    }
+
+    let cutting_html = document.createElement('html');
+    const style = document.querySelector('style').innerHTML
+    cutting_html.innerHTML = `
+			<!DOCTYPE html>
+			<html lang="ko">
+			<head>
+				<meta charset="UTF-8">
+				<title>dies cutting File</title>
+				<style>${style}</style>
+			</head>
+			<body>
+			</body>
+			</html>`
+
+		/*================================================*/
+
+		const dies_list = document.querySelector('.dies-list')
+		const dies_item = document.querySelector('.dies-item')
+		
+		dies_list.addEventListener('click', (e) => {
+			/*추가버튼*/
+			if (e.target && e.target.classList.contains('add-dies')) {
+				e.preventDefault();
+				const newItem = dies_item.cloneNode(true);
+
+				// 복사된 항목의 입력 값 초기화
+				newItem.querySelector('.length').value = '';
+				newItem.querySelector('.count').value = '';
+
+				// dies-list에 복사된 항목 추가
+				dies_list.appendChild(newItem);
+			}
+			
+			/*삭제버튼*/
+			if (e.target && e.target.classList.contains('delete-dies')) {
+        e.preventDefault();
+
+        // 클릭된 버튼의 부모 요소(.dies-item)를 삭제
+        const deleteItem = e.target.closest('.dies-item');
+        if (deleteItem) {
+            deleteItem.remove();
+        }
+    	}
+		});
+		
+
+    /*=========예상 견적가 및 절단내역=====================*/
+		
+		/*전역변수 설정*/
+    const work_title = document.querySelector('.work-title').textContent
+
+    let color, length, count, work, memo
+    let order_container
+		let bar_data =[]
+		
+		/*초기화 */
+		const initial = () => {
+      const results = document.querySelectorAll('.result-item');
+      results.forEach(result => {
+        result.remove();
+      })
+
+      const expect_prices = document.querySelectorAll('.price-item');
+      expect_prices.forEach(expect_price => {
+        expect_price.remove()
+      })
+
+      const cuttings = document.querySelectorAll('.cutting-item');
+      cuttings.forEach(cutting => {
+        cutting.remove()
+      })
+    }
+
+		
+    const result_button = document.querySelector('.button_other')
+    result_button.addEventListener('click', () => {
+		
+		initial()
+		const dies_items = document.querySelectorAll('.dies-item')
+		const result_list = document.querySelector('.result-list')
+    const prices_list = document.querySelector('.price-list')
+		const cutting_list = document.querySelector('.cutting-list')
+		
+		let elements, sum = 0, weight = 0, weight_sum = 0
+		work = document.querySelector('#work')
+		memo = document.querySelector('#memo').value
+		let price
+
+		/*자재현황*/
+		dies_items.forEach(dies_item=>{
+			elements = document.createElement('li')
+			const weight_per = book.diesbook[dies_item.querySelectorAll('select')[0].value]
+			const length = dies_item.querySelectorAll('input')[0].value
+			const count = dies_item.querySelectorAll('input')[1].value
+			weight = weight_per*length*count/1000
+			elements.innerHTML=`
+				<span>${dies_item.querySelectorAll('select')[0].value}</span>
+				<span>${weight_per.toLocaleString("en-US")}</span>
+				<span>${length*count.toLocaleString("en-US")}</span>
+				<span>${weight.toLocaleString("en-US")}</span>`
+			elements.classList.add('result', 'result-item')
+			result_list.appendChild(elements)
+			weight_sum = weight_sum + weight
+			
+			bar_data.push({
+				barname:dies_item.querySelectorAll('select')[0].value,
+				color:dies_item.querySelectorAll('select')[1].value,
+				length:length*count
+			})
+		})
+    
+		/*총계를 삽입합니다.*/
+		elements = document.createElement('li')
+		elements.innerHTML=`
+				<span>총계</span>
+				<span></span>
+				<span></span>
+				<span>${weight_sum.toLocaleString("en-US")}</span>`
+			elements.classList.add('result', 'result-item')
+			result_list.appendChild(elements)	
+			
+		/*=========예상견적가=====================*/
+
+
+		/*자재견적가*/
+		dies_items.forEach(dies_item=>{
+			elements = document.createElement('li')
+			const weight_per = book.diesbook[dies_item.querySelectorAll('select')[0].value]
+			const length = dies_item.querySelectorAll('input')[0].value
+			const count = dies_item.querySelectorAll('input')[1].value
+			weight = weight_per*length*count/1000
+			const price_per = book.colorbook[dies_item.querySelectorAll('select')[1].value]
+			
+			price = weight*price_per
+			elements.innerHTML=`
+				<span>${dies_item.querySelectorAll('select')[0].value}</span>
+				<span>${weight.toLocaleString("en-US")}</span>
+				<span>${price_per.toLocaleString("en-US")}</span>
+				<span>${price.toLocaleString("en-US")}</span>`
+			elements.classList.add('price', 'price-item')
+			prices_list.appendChild(elements)
+			sum = sum + price
+		})
+			
+		/*자재비 예상견적가*/
+		elements = document.createElement('li')
+		cost= 2500
+		elements.innerHTML=`
+				<span>자재비 소계</span>
+				<span></span>
+				<span></span>
+				<span>${sum.toLocaleString("en-US")}</span>`
+		elements.classList.add('price', 'price-item')
+		prices_list.appendChild(elements)		
+			
+		/*제작비(인건비) 예상견적가*/
+		elements = document.createElement('li')
+		cost= 2500
+		elements.innerHTML=`
+				<span>인건비</span>
+				<span>${weight_sum.toLocaleString("en-US")}</span>
+				<span>${cost.toLocaleString("en-US")}</span>
+				<span>${(weight_sum*cost).toLocaleString("en-US")}</span>`
+		elements.classList.add('price', 'price-item')
+		prices_list.appendChild(elements)	
+			
+		/*총 제작비 예상견적가*/
+		elements = document.createElement('li')
+		elements.innerHTML=`
+				<span>총 제작비</span>
+				<span></span>
+				<span></span>
+				<span>${(sum+weight_sum*cost).toLocaleString("en-US")}</span>`
+		elements.classList.add('price', 'price-item')
+		prices_list.appendChild(elements)	
+
+		/*=========절단 상세내역=====================*/
+		dies_items.forEach(dies_item=>{
+			elements = document.createElement('li')
+			const length = dies_item.querySelectorAll('input')[0].value
+			const count = dies_item.querySelectorAll('input')[1].value
+			console.log(dies_item.querySelectorAll('select')[0])
+			elements.innerHTML=`
+				<span>${dies_item.querySelectorAll('select')[0].value}</span>
+				<span>${dies_item.querySelectorAll('select')[1].value}</span>
+				<span>${length+" X "+count}</span>
+				<span><input type="checkBox"></span>`
+			elements.classList.add('cutting', 'cutting-item')
+			cutting_list.appendChild(elements)
+		})
+			
+		/*주문내역을 담기 위한 코드입니다.*/
+		order_container = `
+			<section class="order-container container">
+				<h1 class="section-title">주문내용</h1>
+				<ul class="order-list">
+					<li class="work-title"><span>${work_title}<span></li>
+					<li class="work">작업구분: <span>${work.checked?"제작작업":"절단작업"}</span></li>
+					<li class = "memo"><span>작업관련 요청사항:</span><span style="color:red">${memo}</span></li>
+				</ul>
+			</section>`
+
+    })
+
+    /*====== send ==============================*/
+
+    const send = document.querySelector('.send');
+    send.addEventListener('click', async () => {
+
+      const div = document.createElement('div')
+      const cutting_container = document.querySelector('.cutting-container').outerHTML
+      const footer_container = `
+        <form action="" class="footer">
+          <label for="last-weight">
+            <input type="number" id="last-weight" placeholder="kg"> 
+          </label>
+          <button class="weight_send button">절단완료</button>
+          <button class="work_send button">제작완료</button>
+        </form>
+        <script>
+          let pageId,order
+          function getValue(data,order_data){
+            pageId = data
+            order = order_data
+          }
+          
+          /*절단완료 버튼 클릭시*/
+          const cut_button = document.querySelector('.weight_send')
+          cut_button.addEventListener('click',async (event)=>{
+            event.preventDefault()
+            console.log(pageId,order)
+            const weight = Number(document.querySelector('#last-weight').value)
+            console.log(weight);
+            if(weight!=null && weight!=0 && weight!='0'){
+              const res = await fetch("https://shrill-hill-66e0.nameofwind.workers.dev", {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  pageId: pageId,
+                  weight: weight,
+                  button_name:cut_button.textContent
+                })
+              })
+              if(res.ok){
+                alert('데이터베이스에 반영되었습니다.')
+                if (window.opener) {
+                  window.opener.location.reload();
+                }
+                window.close()
+              }else{
+                alert("데이터베이스에 반영되지 않았습니다. 다시 시도하세요")
+                console.log(res)
+              }
+            }else{
+              alert('무게를 입력하세요')
+            }
+          })
+            
+          /*제작완료 버튼 클릭시*/
+          const work_button = document.querySelector('.work_send')
+          work_button.addEventListener('click',async (event)=>{
+            event.preventDefault()
+            console.log(pageId,order)
+            if(order=="제작 작업"||order=="제작 작업 "){
+              const res = await fetch("https://shrill-hill-66e0.nameofwind.workers.dev", {
+                method: "PUT",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  pageId: pageId,
+                  button_name:work_button.textContent
+                })
+              })
+              if(res.ok){
+                alert('데이터베이스에 반영되었습니다.')
+                if (window.opener) {
+                  window.opener.location.reload();
+                }
+                window.close()
+              }else{
+                alert("데이터베이스에 반영되지 않았습니다. 다시 시도하세요")
+                console.log(res)
+              }
+            }else{
+              alert("절단작업은 제작완료 버튼을 사용할 수 없습니다.")
+            }
+          })`
+      div.innerHTML = order_container + cutting_container + footer_container
+
+      cutting_html.querySelector('body').appendChild(div)
+
+      const client_name = prompt('거래처명을 입력하세요:');
+      const now = new Date();
+      const worklist_url_key = now.toISOString()
+      const blob = new Blob([cutting_html.outerHTML], {
+        type: 'text/html'
+      });
+			
+      const res = await fetch("https://shrill-hill-66e0.nameofwind.workers.dev", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          client: client_name,
+          work_title:work_title,
+          order: work.checked ? '제작 작업' : '절단 작업',
+					limit: now.toISOString().split('T')[0],
+					payment:"결제전",
+          part_price: 0,
+          worklist: worklist_url_key,
+          content: await blobToBase64(blob),
+					bar_data:bar_data,
+        })
+      })
+      if (res.ok) {
+        const data = await res.json();
+        window.location.href = 'https://kim-29.github.io/WhasungAluminium/';
+      } else {
+        const errorText = await res.text();
+        console.log('post error', res.statusText, errorText)
+      }
+    });
+
+    function blobToBase64(blob) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => resolve(reader.result.split(',')[1]);
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    }
+
+    /*===== end of send =====*/
+
+  </script>
+</body>
+
+</html>
